@@ -15,7 +15,7 @@ def parse_log_line(line):
     match = re.search(pattern, line)
     if match:
         distance = int(match.group(2))
-        if 100 <= distance <= 8000:  # Only consider distances within the specified range
+        if 100 <= distance <= 8000: 
             return {
                 'angle': float(match.group(1)),
                 'distance': distance,
