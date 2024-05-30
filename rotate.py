@@ -2,7 +2,7 @@ import math
 from pylx16a.lx16a import LX16A, ServoTimeoutError
 import time
 
-# Initialization and servo setup
+
 LX16A.initialize("COM11", 0.1)
 
 try:
