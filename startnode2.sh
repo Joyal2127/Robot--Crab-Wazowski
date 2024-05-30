@@ -1,8 +1,4 @@
 #!/bin/bash
-# Modified to output data directly to stdout for optional piping
-# Provides flexibility for either direct execution or piping the output to another process
-
-# Check for required command line arguments
 if [ $# -lt 2 ]; then
     echo "Usage error for $0. Required arguments not provided." >&2
     echo "Usage: $0 <product_type> <communication_mode> [serial_port] [server_ip] [server_port]" >&2
